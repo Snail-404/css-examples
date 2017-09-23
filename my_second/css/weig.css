@@ -1,0 +1,93 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: skyblue;
+}
+
+#box{
+	width: 80%;
+	height: 800px;
+	margin: 0 auto;
+}
+
+#box h2{
+	text-align: center;
+	padding: 30px 0;
+}
+#box hr{
+	margin: 5px 0;
+}
+#box h4{
+	padding: 20px 0;
+}
+
+#box #heig,#box #weig{
+	width: 200px;
+	height: 30px;
+}
+#box input[type=submit],#box input[type=button]{
+	/*转为块元素 input img*/
+	/*display: block;*/
+	width: 200px;
+	height: 30px;
+	background: grey;
+	border: none;
+}
+#tab1{
+	width: 100%;
+	background: cornflowerblue;
+	margin-top: 20px;
+}
+#tab1 td{
+	text-align: center;
+	padding: 10px 0;
+}
+
+#tab1 tr:nth-child(2){
+	background: forestgreen;
+}
+#tab1 tr:nth-child(3){
+	background: red;
+}
+#tab1 tr:nth-child(4){
+	background: grey;
+	
+}
+
+.result{
+	background: cornflowerblue;
+	margin-top: 30px;
+	/*当子元素全部添加浮动后，父元素会出现高度坍塌 此时给父元素添加overflow: hidden;可解决*/
+	overflow: hidden;
+	padding: 10px 0;
+}
+.result p{
+	width: 50%;
+	float: left;
+	text-align:center;
+}
+
+#tab2{
+	width: 100%;
+	margin: 20px 0;
+	background:cornflowerblue ;
+}
+
+#tab2 #tr1{
+	background: none;
+}
+#tab2 td{
+	padding: 10px 0;
+	text-align: center;
+}
+#tab2 tr:nth-child(2n){
+	background: fuchsia;
+}
+
+#tab2 tr:nth-child(2n+1){
+	background: peachpuff;
+}

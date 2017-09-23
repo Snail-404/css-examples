@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.title {
+				background-color: darkgrey;
+				width: 300px;
+				margin: 10px;
+			}
+			
+			.content {
+				border: 2px solid black;
+				width: 300px;
+				margin: 10px;
+				padding: 10px;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function() {
+				$('#btn').click(function() {
+					var userName = $('#userName').val();
+					var sex = $('#sex').attr('checked') ? '男' : '女';
+					var mary = $('#mary').attr('checked') ? '已' : '没';
+					$('.showMess').html(userName + '\n' + sex + '\n' + mary).show(1000).css('display', 'block');
+				})
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="title">
+			请输入信息
+		</div>
+		<div class="content">
+			姓名：
+			<input type="text" name="userName" id="userName" />
+			<br /> 性别：
+			<input checked="checked" type="radio" name="sex" id="sex" value="男" />
+			<input type="radio" name="sex" id="sex" value="女" />
+			<br /> 婚否：
+			<input type="checkbox" id="mary" />
+			<br />
+			<div class="divBtn">
+				<input type="button" id="btn" value="提交" />
+				<br />
+			</div>
+		</div>
+
+		<div class="showMess">
+
+		</div>
+	</body>
+
+</html>

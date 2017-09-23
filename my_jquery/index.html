@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			/*window.onload = function() {
+							var name = document.getElementById('name');
+							alert(name);
+						}*/
+			$(document).ready(function() {
+				/*var name = document.getElementById('name');
+				alert(name);*/
+				
+				/*var $name=$('#name');
+				console.log($name.val());*/
+				
+				/*var name = document.getElementById('name');
+				var $name=$(name);
+				console.log($name.val());*/
+				
+				var $name=$('#name');
+				
+				//console.log($name[0].value);
+				console.log($name.get(0).value);
+			})
+		</script>
+	</head>
+
+	<body>
+		<input type="button" name="name" id="name" value="zs" />
+
+	</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.container{
+				width: 300px;
+				height: 600px;
+				background-color: yellow;
+				/*display:-webkit-flex;*/
+				display: flex;
+				flex-direction: column-reverse;
+				flex-flow: wrap;
+			}
+			.d1{
+				width: 100px;
+				height: 100px;
+				background-color: mediumpurple;
+				/*-webkit-flex-grow: 7;*/
+				order: 2;
+			}
+			.d2{
+				width: 100px;
+				height: 100px;
+				background-color: greenyellow;
+				/*-webkit-flex-grow: 2;*/
+				order: 1;
+			}
+			.d3{
+				width: 100px;
+				height: 100px;
+				background-color: grey;
+				/*-webkit-flex-grow: 1;*/
+				order: 3;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="d1">
+				d1	
+			</div>
+			<div class="d2">
+				d2
+			</div>
+			<div class="d3">
+				d3
+			</div>
+		</div>
+	</body>
+</html>

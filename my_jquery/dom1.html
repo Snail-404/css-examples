@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.d1{
+				width: 100px;
+				background-color: red;
+			}
+			.d2{
+				height: 200px;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function(){
+				//console.log($('#test').attr('value')); 
+				//$('#test').attr('style','width:300px');
+				//$('#test').attr({value:1000,size:18});
+				//$('.testd1').html('testteesttest');
+				//console.log($('.testd1').html());
+				//$('#test').val('sdklfjkjghgkhjk');
+				
+				//$('.test_css').css('width','300px').css('background','yellow').css('height','200px');
+				//$('.test_css').css({'width':'100px','height':'100px','background':'yellow'});
+				
+				/*$('.test_css').addClass('d1 d2');
+				$('.test_css').removeClass('d2');*/
+				
+				$('.test_css').click(function(){
+					$('.test_css').toggleClass('d1');
+				})
+				
+			})
+		</script>
+	</head>
+	<body>
+		<!--<input type="text" name="test" id="test" value="attrattr" />
+		
+		<div class="testd1">
+			sdfff
+		</div>-->
+		
+		<div class="test_css">
+			787878
+		</div>
+		
+	</body>
+</html>

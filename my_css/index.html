@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/first.css"/>
+		<style>
+			ul li a{
+				font-size: 30px;
+			}
+			ul li a:link{
+				color: blue;
+			}
+			ul li a:visited{
+				color: red;
+			}
+			ul li a:hover{
+				color: yellow;
+			}
+			ul li a:active{
+				color: green;
+			}
+			
+			span{
+				color: blue !important;
+			}
+			p span{
+				color: yellow;
+			}
+			
+			p .sc{
+				color: aquamarine;
+			}
+			p #si{
+				color: gray;
+			}
+			.d1{
+				width: 200px;
+				height: 200px;
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="d1">
+			
+		</div>
+		<ul>
+			<li><a href="#">伪类选择器</a></li>
+		</ul>
+		
+		<p>
+			<span id="si" class="sc">优先级</span>
+		</p>
+	</body>
+</html>
